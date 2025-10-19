@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "title": "AI Club Hackathon 2025",
+    "club": "AI Club",
+    "category": "Tech",
+    "datetime": "2025-10-23T10:00",
+    "venue": "Auditorium Hall A",
+    "regLink": "https://example.com/register-ai-hack",
+    "poster": "",
+    "description": "48-hour sprint to build real-world AI tools. Teams of 3–5."
+  },
+  {
+    "id": "2",
+    "title": "Inter-College Dance Fest",
+    "club": "Cultural Council",
+    "category": "Cultural",
+    "datetime": "2025-10-27T17:30",
+    "venue": "Open Air Theatre",
+    "regLink": "https://example.com/dance-fest",
+    "poster": "",
+    "description": "Group and solo categories. Prelims on campus, finals on main stage."
+  }
+]
+

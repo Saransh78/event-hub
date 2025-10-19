@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Campus Event Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Campus Event Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="submit.html">Add Event</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" placeholder="Search title, club, venue..." />
+      <select id="category">
+        <option value="All">All</option>
+        <option>Tech</option>
+        <option>Cultural</option>
+        <option>Sports</option>
+        <option>Academic</option>
+        <option>Workshop</option>
+        <option>Fest</option>
+        <option>Other</option>
+      </select>
+      <select id="sort">
+        <option value="soon">Sort: Soonest</option>
+        <option value="new">Sort: Newest</option>
+      </select>
+    </section>
+
+    <section id="grid" class="grid"></section>
+    <p id="empty" class="empty hidden">No matching events.</p>
+  </main>
+
+  <footer class="footer">Made with ♥ by your college</footer>
+  <script src="script.js"></script>
+</body>
+</html>
