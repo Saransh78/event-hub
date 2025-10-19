@@ -45,7 +45,10 @@ function render(list) {
         <div>📅 ${fmtDate(e.datetime)}</div>
         <div>📍 ${e.venue}</div>
       </div>
-      ${e.regLink ? `<a class="btn" href="${e.regLink}" target="_blank" rel="noreferrer">Register</a>` : ``}
+      ${e.regLink ? `
+        <a class="btn" href="${e.regLink}" target="_blank" rel="noreferrer">
+          Register Now →
+        </a>` : ``}
     `;
     els.grid.appendChild(card);
   }
@@ -73,13 +76,20 @@ function applyFilters() {
 }
 
 async function boot() {
-  const res = await fetch('events.json', { cache: 'no-store' });
-  EVENTS = await res.json();
-  applyFilters();
+  try {
+    const res = await fetch('events.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Failed to load events.json');
+    EVENTS = await res.json();
+    applyFilters();
 
-  els.search.addEventListener('input', applyFilters);
-  els.category.addEventListener('change', applyFilters);
-  els.sort.addEventListener('change', applyFilters);
+    els.search.addEventListener('input', applyFilters);
+    els.category.addEventListener('change', applyFilters);
+    els.sort.addEventListener('change', applyFilters);
+  } catch (err) {
+    console.error(err);
+    els.empty.textContent = 'Could not load events.';
+    els.empty.classList.remove('hidden');
+  }
 }
 
 boot();

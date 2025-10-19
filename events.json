@@ -6,7 +6,7 @@
     "category": "Tech",
     "datetime": "2025-10-23T10:00",
     "venue": "Auditorium Hall A",
-    "regLink": "https://example.com/register-ai-hack",
+    "regLink": "https://forms.gle/example1",
     "poster": "",
     "description": "48-hour sprint to build real-world AI tools. Teams of 3–5."
   },
@@ -17,9 +17,20 @@
     "category": "Cultural",
     "datetime": "2025-10-27T17:30",
     "venue": "Open Air Theatre",
-    "regLink": "https://example.com/dance-fest",
+    "regLink": "https://forms.gle/example2",
     "poster": "",
     "description": "Group and solo categories. Prelims on campus, finals on main stage."
+  },
+  {
+    "id": "3",
+    "title": "Cybersecurity Workshop",
+    "club": "Tech Council",
+    "category": "Workshop",
+    "datetime": "2025-10-29T11:00",
+    "venue": "Lab 5, IT Block",
+    "regLink": "https://forms.gle/example3",
+    "poster": "",
+    "description": "Learn the basics of cyber defense and ethical hacking."
   }
 ]
 
