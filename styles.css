@@ -183,3 +183,28 @@ body {
   border-top: 1px solid var(--border);
   margin-top: 40px;
 }
+/* ---------- Logo ---------- */
+.logo {
+  font-size: 1.9rem;           /* slightly bigger */
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  user-select: none;
+}
+
+.logo span {
+  color: var(--accent);        /* blue color from your theme */
+}
+.logo span {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+.topbar {
+  padding: 16px 28px;
+}
+
